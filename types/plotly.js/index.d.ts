@@ -1054,7 +1054,7 @@ export interface PlotData {
     error_y: ErrorBar;
     xaxis: string;
     yaxis: string;
-    text: string | string[];
+    text: string | string[] | string[][];
     lat: Datum[];
     lon: Datum[];
     line: Partial<ScatterLine>;
@@ -1068,7 +1068,7 @@ export interface PlotData {
     'marker.symbol': MarkerSymbol | MarkerSymbol[];
     'marker.color': Color;
     'marker.colorscale': ColorScale | ColorScale[];
-    'marker.opacity': number | number[];
+    'marker.opacity': number | number[] | number[][];
     'marker.size': number | number[] | number[][];
     'marker.maxdisplayed': number;
     'marker.sizeref': number;
